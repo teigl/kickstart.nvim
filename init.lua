@@ -156,6 +156,10 @@ vim.opt.scrolloff = 10
 
 vim.opt.smartindent = true
 
+vim.opt.tabstop = 2
+vim.opt.softtabstop = 0
+vim.opt.shiftwidth = 0
+
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
 
@@ -575,6 +579,7 @@ require('lazy').setup({
       local servers = {
         zls = {},
         clangd = {},
+        jsonls = {},
         -- gopls = {},
         -- pyright = {},
         -- rust_analyzer = {},
